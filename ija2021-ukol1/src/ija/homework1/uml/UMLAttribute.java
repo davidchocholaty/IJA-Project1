@@ -11,6 +11,7 @@
 
 package ija.homework1.uml;
 
+/* TODO public, private, protected */
 public class UMLAttribute extends Element {
     private UMLClassifier type;
     

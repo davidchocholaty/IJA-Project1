@@ -15,13 +15,11 @@ import java.util.List;
 import java.util.ArrayList;
 
 /* TODO public, private, protected */
-public class ClassDiagram extends Element {
-    private List<UMLClass> classes;
+public class ClassDiagram extends Element {    
     private List<UMLClassifier> classifiers;
 
     public ClassDiagram(String name) {
-        super(name);
-        this.classes = new ArrayList<UMLClass>();
+        super(name);        
         this.classifiers = new ArrayList<UMLClassifier>();
     }
 
@@ -39,14 +37,14 @@ public class ClassDiagram extends Element {
     }
 
     public UMLClass createClass(String name) {
-        for(UMLClass listClass : classes) {
-            if(listClass.getName().equals(name)) {
+        for(UMLClassifier listClassifier : classifiers) {
+            if(listClassifier.getName().equals(name)) {
                 return null;
             }
         }
 
         UMLClass newClass = new UMLClass(name);
-        classes.add(newClass);
+        classifiers.add(newClass);
 
         return newClass;
     }
