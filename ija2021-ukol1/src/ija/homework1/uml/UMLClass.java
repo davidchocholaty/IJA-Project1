@@ -12,10 +12,11 @@
 package ija.homework1.uml;
 
 import java.util.List;
+import java.util.ArrayList;
 
 /* TODO public, private, protected */
 public class UMLClass extends UMLClassifier {
-    private boolean isAbstract;    
+    private boolean isAbstract;
     private List<UMLAttribute> attributes;
 
     public UMLClass(String name) {
@@ -25,8 +26,15 @@ public class UMLClass extends UMLClassifier {
     }
 
     public boolean addAttribute(UMLAttribute attr) {
-        //TODO atribut stejneho jmena
+        for(UMLAttribute listAttr : attributes) {
+            if(listAttr.getName().equals(attr.getName())) {
+                return false;
+            }
+        }
+        
         attributes.add(attr);
+
+        return true;
     }
 
     public List<UMLAttribute> getAttributes() {
@@ -42,7 +50,13 @@ public class UMLClass extends UMLClassifier {
     }
 
     public int moveAttrAtPosition(UMLAttribute attr, int pos) {
-        // TODO
+        if(attributes.remove(attr)) {
+            attributes.add(pos, attr);
+
+            return 0;
+        }
+        
+        return -1;
     }
 
     public void setAbstract(boolean isAbstract) {

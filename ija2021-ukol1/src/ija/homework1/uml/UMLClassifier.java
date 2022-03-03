@@ -12,10 +12,10 @@
 package ija.homework1.uml;
 
 /* TODO public, private, protected */
-public class UMLClassifier extends Element{
+public class UMLClassifier extends Element {
     private boolean isUserDefined;
 
-    public UMLClassifier(String name) {        
+    public UMLClassifier(String name) {
         super(name);
         isUserDefined = true;
     }
