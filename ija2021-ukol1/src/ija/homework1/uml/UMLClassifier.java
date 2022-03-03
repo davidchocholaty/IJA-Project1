@@ -26,7 +26,7 @@ public class UMLClassifier extends Element {
     }
 
     public static UMLClassifier forName(String name) {
-        return new UMLClassifier(name);
+        return new UMLClassifier(name, false);
     }
 
     public boolean isUserDefined() {

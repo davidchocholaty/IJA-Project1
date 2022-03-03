@@ -13,6 +13,7 @@ package ija.homework1.uml;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /* TODO public, private, protected */
 public class UMLClass extends UMLClassifier {
@@ -38,7 +39,7 @@ public class UMLClass extends UMLClassifier {
     }
 
     public List<UMLAttribute> getAttributes() {
-        return attributes;
+        return Collections.unmodifiableList(attributes);        
     }
 
     public int getAttrPosition(UMLAttribute attr) {
