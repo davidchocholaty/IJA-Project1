@@ -13,8 +13,6 @@ package ija.homework1.uml;
 
 /* TODO public, private, protected */
 
-/* TODO overrides javadoc comment */
-
 /**
 * 
 * Trida reprezentuje klasifikator v diagramu. 
@@ -71,6 +69,7 @@ public class UMLClassifier extends Element {
     *
     * @return Retezec reprezentujici klasifikator.
     */
+    @Override
     public String toString() {
         return super.getName() + "(" + String.valueOf(isUserDefined) + ")";
     }

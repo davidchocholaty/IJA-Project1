@@ -13,8 +13,6 @@ package ija.homework1.uml;
 
 /* TODO public, private, protected */
 
-/* TODO toString javadoc comment overrides */
-
 /**
 * Trida reprezentuje atribut, ktery ma sve jmeno a typ. 
 * Je odvozena (rozsiruje) od tridy Element. Typ atributu 
@@ -49,6 +47,7 @@ public class UMLAttribute extends Element {
     *
     * @return Retezec reprezentujici atribut.
     */
+    @Override
     public String toString() {        
         return super.getName() + ":" + type.toString();
     }
