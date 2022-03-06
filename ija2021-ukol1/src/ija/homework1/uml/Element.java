@@ -11,8 +11,6 @@
 
 package ija.homework1.uml;
 
-/* TODO public, private, protected */
-
 /**
 * Trida reprezentuje pojmenovany element (thing), 
 * ktery muze byt soucastu jakekoliv casti v diagramu.
@@ -25,7 +23,7 @@ public class Element {
     *
     * @param name Nazev elementu
     */
-    public Element(String name) {
+    protected Element(String name) {
         this.name = name;
     }
 

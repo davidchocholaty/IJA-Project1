@@ -11,8 +11,6 @@
 
 package ija.homework1.uml;
 
-/* TODO public, private, protected */
-
 /**
 * Trida reprezentuje atribut, ktery ma sve jmeno a typ. 
 * Je odvozena (rozsiruje) od tridy Element. Typ atributu 

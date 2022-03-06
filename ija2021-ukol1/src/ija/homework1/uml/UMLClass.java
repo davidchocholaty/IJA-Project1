@@ -15,8 +15,6 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/* TODO public, private, protected */
-
 /**
 * Trida (jeji instance) reprezentuje model tridy z jazyka UML. 
 * Rozsiruje tridu UMLClassifier. Obsahuje seznam atributu a operaci (metod). 

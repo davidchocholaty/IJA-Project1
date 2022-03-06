@@ -15,8 +15,6 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/* TODO public, private, protected */
-
 /**
 * Trida reprezentuje operaci, ktera ma sve jmeno, navratovy typ 
 * a seznam argumentu. Je odvozena (rozsiruje) od tridy UMLAttribute, 
@@ -48,9 +46,8 @@ public class UMLOperation extends UMLAttribute {
     */
     public static UMLOperation create(String name, UMLClassifier type, UMLAttribute... args) {
         UMLOperation newOperation = new UMLOperation(name, type);
-        //newOperation.args.addAll(args);
-        for(UMLAttribute attr : args) {
-            // TODO jestli otestovani true false
+
+        for(UMLAttribute attr : args) {            
             newOperation.addArgument(attr);
         }
 

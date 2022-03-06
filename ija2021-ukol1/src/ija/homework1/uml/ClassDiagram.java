@@ -14,8 +14,6 @@ package ija.homework1.uml;
 import java.util.List;
 import java.util.ArrayList;
 
-/* TODO public, private, protected */
-
 /**
 * Trida reprezentuje diagram trid. Je odvozen od tridy Element (ma nazev). 
 * Obsahuje seznam trid (instance tridy UMLClass) prip. klasifikatoru 

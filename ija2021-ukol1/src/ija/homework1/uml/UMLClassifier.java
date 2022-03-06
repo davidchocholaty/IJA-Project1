@@ -11,8 +11,6 @@
 
 package ija.homework1.uml;
 
-/* TODO public, private, protected */
-
 /**
 * 
 * Trida reprezentuje klasifikator v diagramu. 
@@ -28,7 +26,7 @@ public class UMLClassifier extends Element {
     *
     * @param name Nazev klasifikatoru.
     */
-    public UMLClassifier(String name) {
+    protected UMLClassifier(String name) {
         super(name);
         isUserDefined = true;
     }
@@ -39,7 +37,7 @@ public class UMLClassifier extends Element {
     * @param name          Nazev klasifikatoru.
     * @param isUserDefined Uzivatelsky definovan (soucasti diagramu).
     */
-    public UMLClassifier(String name, boolean isUserDefined) {
+    protected UMLClassifier(String name, boolean isUserDefined) {
         super(name);
         this.isUserDefined = isUserDefined;
     }
